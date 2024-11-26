@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style8.css">
+    <title>Путешествуй с нами</title>
+</head>
+<body>
+    <div class="hamburger ">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  
+    <ul class="menu" id="menu">
+        <li>
+          <a href="">Главная</a>
+        </li>
+        <li>
+          <a href="./catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="./catalog.html">Горящие туры</a>
+        </li>
+        <li>
+          <a href="./catalog.html">О нас</a>
+        </li>
+        <li>
+            <a href="#footer_contact">Контакты</a>
+        </li>
+    </ul>
+    <header >
+    <div class="container">         
+        <div class="logo_top">
+            <img src="./Logo.png" alt="Логотип" height="350 px" width=auto>
+        </div>  
+        <div class="top">      
+            <div class="header_top">
+                <div class="contact">
+                    <a href="tel:+78602431511">тел. +7 (8602) 43-15-11</a><br>
+                    <a href="mailto:ghjknfjn@mail.ru">e-mail: ghjknfjn@mail.ru</a>
+                </div>
+                <div class="to_me">
+                    <button>Связаться с нами</button><br>
+                    <search>
+                        <input type="search" placeholder="Поиск">
+                        <button><img src="./icon-park_search.png" alt="Найти"></button>
+                    </search>
+                </div>
+            </div>
+            <div class="navigation">
+                <a href="#">Главная</a>
+                <a href="./catalog.html">Каталог</a>           
+                <a href="./catalog.html">Горящие туры</a>
+                <a href="./catalog.html">О нас</a>
+                <a href="#footer_contact">Контакты</a>
+            </div>
+        </div>
+    </div>
+    </header> <!--Конец блока шапки страницы-->
+    <main>
+        <div class="main">
+            <div class="cit">
+                "Мир - это книга, и те, кто не путешествуют, читают лишь одну её страницу"<br>
+                Аврелий Августин
+            </div>
+            <div class="block1">
+                <div class="text1">
+                    <p>Путешествия - это не только способ увидеть мир, но и отдых, великолепное расслабление, 
+                        восстановление своего физического и психического здоровья, обретение новых идей, заряд энергии на многие месяцы.</p> 
+                    <p>Каждый человек путешествует по-своему - кто-то в мечтах, кто-то по работе, 
+                        а кто-то, совмещая отдых с открытиями многих интересных мест в стране и мире.</p>
+                </div>
+                <div class="slider1">
+                    <img src="./Cruiz.png" alt="Круиз">
+                </div>
+            </div>
+            <div class="block2">
+                <div>
+                    <div class="cit" id="cit2">
+                        "Человека делают счастливым три вещи: любовь, интересная работа и возможность путешествовать"<br>
+                        Иван Алексеевич Бунин
+                    </div>
+                    <div class="slider2">
+                        <img src="./Venecia.png" alt="Венеция">
+                    </div>
+                </div>
+                <div class="text2">
+                    <p>У вас приближается отпуск? Один из способов провести его незабываемо и волшебно - отправиться в путешествие. 
+                        Куда же можно совершить путешествие в это время года? Это зависит от Вашего бюджета.</p> 
+                    <p>Можно путешествовать по России, по Европе, можно отправиться в круиз на океанском лайнере, 
+                        можно полететь или поехать к морю, на горнолыжный курорт, а можно просто пойти с друзьями в поход.</p>
+                    <p>Мы приглашаем вас отправиться в путешествие с нами. 
+                        Смотрите. Выбирайте. Свяжитесь с нами. И мы сделаем всё, чтобы ваш отдых стал воплощением вашей мечты.</p>   
+                </div>
+            </div>
+            <div class="cit">
+                "Путешествовать, наблюдать природу, улавливать её тайны и восторгаться этим счастьем - значит жить!"<br>
+                Фридрих Геблер
+            </div>
+            <a href="" >Наверх</a>
+        </div>
+    </main>
+    <hr>
+    <footer> <!--Начало блока, замыкающего страницу-->
+        <div class="footer_logo">
+            <img src="./Logo.png" alt="Логотип" height="200 px" width=auto>
+        </div>
+        <div class="footer_contact" id="footer_contact">
+            г. Севастополь, <br>
+            ул. Лётчиков, 53, оф.16<br>
+            тел. +7 (8692) 43-15-11<br>
+            e-mail: ghjknfjn@mail.ru<br>
+        </div>
+        <div class="footer_form">
+            <form action="#">
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Введите ваше имя" minlength="3" maxlength="12" required id="name"><br>
+                <label for="tel">Тел.</label>
+                <input type="text" placeholder="Ваш номер телефона" required id="tel"><br>
+                <label for="e-mail">E-mail</label>
+                <input type="text" placeholder="Ваш e-mail" required id="e-mail">
+                <button type="submit">Связаться с нами</button>
+            </form>
+        </div>
+        
+    </footer>
+<script src="script.js"></script> <!--подключили файл js-->
+</body>
+</html>

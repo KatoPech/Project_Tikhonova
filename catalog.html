@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style8.css">
+    <title>Путешествуй с нами</title>
+</head>
+<body>
+    <div class="hamburger ">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  
+    <ul class="menu" id="menu">
+        <li>
+          <a href="./index.html">Главная</a>
+        </li>
+        <li>
+          <a href="./catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="./catalog.html">Горящие туры</a>
+        </li>
+        <li>
+          <a href="./catalog.html">О нас</a>
+        </li>
+        <li>
+            <a href="#footer_contact">Контакты</a>
+        </li>
+    </ul>
+    <header >
+    <div class="container">         
+        <div class="logo_top">
+            <img src="./Logo.png" alt="Логотип" height="350 px" width=auto>
+        </div>  
+        <div class="top">      
+            <div class="header_top">
+                <div class="contact">
+                    <a href="tel:+78602431511">тел. +7 (8602) 43-15-11</a><br>
+                    <a href="mailto:ghjknfjn@mail.ru">e-mail: ghjknfjn@mail.ru</a>
+                </div>
+                <div class="to_me">
+                    <button>Связаться с нами</button><br>
+                    <search>
+                        <input type="search" placeholder="Поиск">
+                        <button><img src="./icon-park_search.png" alt="Найти"></button>
+                    </search>
+                </div>
+            </div>
+            <div class="navigation">
+                <a href="./index.html">Главная</a>
+                <a href="./catalog.html">Каталог</a>           
+                <a href="./catalog.html">Горящие туры</a>
+                <a href="./catalog.html">О нас</a>
+                <a href="#footer_contact">Контакты</a>
+            </div>
+        </div>
+    </div>
+    </header> <!--Конец блока шапки страницы-->
+    <main>
+        <div class="main_catalog">
+            <div class="notice">
+                <p>Приносим свои извинения!</p>
+                <p>Страница находится в разработке</p>
+            </div>
+            
+            <a href="">Наверх</a>
+        </div>
+    </main>
+    <hr>
+    <footer> <!--Начало блока, замыкающего страницу-->
+        <div class="footer_logo">
+            <img src="./Logo.png" alt="Логотип" height="200 px" width=auto>
+        </div>
+        
+        <div class="footer_contact" id="footer_contact">
+            г. Севастополь, <br>
+            ул. Лётчиков, 53, оф.16<br>
+            тел. +7 (8692) 43-15-11<br>
+            e-mail: ghjknfjn@mail.ru<br>
+        </div>
+        <div class="footer_form">
+            <form action="#">
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Введите ваше имя" minlength="3" maxlength="12" required id="name"><br>
+                <label for="tel">Тел.</label>
+                <input type="text" placeholder="Ваш номер телефона" required id="tel"><br>
+                <label for="e-mail">E-mail</label>
+                <input type="text" placeholder="Ваш e-mail" required id="e-mail">
+                <button type="submit">Связаться с нами</button>
+            </form>
+        </div>
+        
+    </footer>
+<script src="script.js"></script> <!--подключили файл js-->
+</body>
+</html>

@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+.menu{
+    display: none;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(7, 40, 107);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+.hamburger.active div:nth-child(1){
+    transform: rotate(45deg) translate(5px,10.5px);
+}
+.hamburger.active div:nth-child(3){
+    transform: rotate(-45deg) translate(5px,-10.5px);
+}
+.hamburger.active div:nth-child(2){
+    opacity: 0;
+}
+.show{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 20px;
+    transform: translateZ(1px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #023864;
+    max-height: 200px;
+    transition: max-height 0.3s ease;
+    list-style: none;
+    padding: 20px;
+}
+.show a{
+    font-size: 17px;
+    color: rgb(253, 239, 221);
+    text-decoration: none;
+    line-height: 2;
+    letter-spacing: 2px;
+    transition: line-height 0.5s ease ;
+}
+.container {    
+    width: 100%;
+    height: auto;
+    margin: auto;  
+    display: flex;    
+}
+.top {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+.header_top {   
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.contact {     /* тел. +7 (8692) 43-15-11 e-mail: ghjknfjn@mail.ru */
+    display: inline-block;
+    margin: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;    
+}
+.to_me {     /* Связаться и поиск */
+    display: inline-block;
+    margin: 40px;
+}
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.navigation a {    
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(14, 33, 72);
+    margin: 0px 50px;    
+}
+.contact a {
+    text-decoration: none;
+    color: rgb(6, 84, 117);
+
+}
+footer {
+    background-color: rgb(14, 33, 72);
+    color: white;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_contact, .footer_form  {
+    margin: 30px ;
+    font-size: 22px;
+    line-height: 2;
+}
+#e-mail {
+    width: 155px;
+}
+.main, .main_catalog {
+    background-image: url(./globe-vector-9887.jpg);
+    background-size: cover;  
+    padding: 40px ;  
+    border-block-start: 8px double rgb(7, 130, 167);
+}
+.main_catalog {
+    display: block;
+    min-height: 1000px;
+}
+form button {
+    margin-left: 40px;    
+}
+.to_me > button, form button {
+    border-radius: 15px;
+    padding: 7px 15px;
+    background: radial-gradient(287.5% 50% at 50% 50%, rgb(255, 243, 222) 0%, rgb(178, 223, 255) 100%);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #000;   
+    border: none;
+    margin-bottom: 5px;   
+}
+search  {
+    display: flex; 
+    }
+search > input{
+    width: 155px;
+    height: 27px;
+    border: 1px solid #a2c9fb;
+}
+search > button{
+    width: auto;
+    height: 27px;
+    border: 1px solid #a2c9fb;
+}
+.slider1 img, .slider2 img {
+    object-fit: cover;
+    width: 680px;
+    height: 360px;
+    margin: 60px 20px;
+}
+.block1, .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.text1, .text2 {
+    width: 680px;
+    height: auto;
+    font-size: 30px;
+    text-align: justify;  
+    margin: 30px 20px;
+}
+.cit {
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(113, 36, 12);
+    font-weight: 800;
+    text-align: justify;
+}
+#cit2 {
+    width: 700px;
+    height: auto;
+}
+.main > a, .main_catalog >a {
+    display: block;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #023864;
+}
+.notice {
+    display: block;
+    margin: 30px 0;
+    padding: 30px0;
+    display: block;
+    font-size: 30px;
+}
+@media (max-width: 1550px) {
+    .logo_top img {width: 300px; height: auto;}
+    .navigation a {font-size: 30px; margin: 0px 30px;}
+    .text1, .text2 {width: 550px; margin: 30px 10px; font-size: 26px;}
+    .slider1 img, .slider2 img {width: 550px; height: 290px; margin: 60px 10px;}
+    #cit2 {width: 560px;}
+}
+@media (max-width: 1280px) {
+    .logo_top img {width: 220px; height: auto;}
+    .footer_logo img {width: 150px; height: auto;}
+    .navigation a {font-size: 23px; margin: 0px 20px;}
+    .text1, .text2 {width: 470px; margin: 30px 5px; font-size: 23px;}
+    .slider1 img, .slider2 img {width: 470px; height: 230px; margin: 60px 5px;}
+    .cit {font-size: 21px;}
+    #cit2 {width: 470px;}
+    .main, .main_catalog {padding: 40px 20px 100px 20px;}
+    .footer_contact, .footer_form  {margin: 20px ; font-size: 20px; line-height: 1.5;}
+}
+@media (max-width: 1024px) {
+    .logo_top img {width: 120px; height: auto;}
+    .footer_logo img {width: 100px; height: auto;}
+    .navigation a {font-size: 20px; margin: 0px 20px;}
+    .text1, .text2 {width: 355px; margin: 10px 5px; font-size: 18px;}
+    .slider1 img, .slider2 img {width: 355px; height: 172px; margin: 35px 5px;}
+    .cit {font-size: 16px;}
+    #cit2 {width: 360px;}
+    .main, .main_catalog  {padding: 20px 10px 50px 10px;}
+    .footer_contact, .footer_form  {margin: 20px ; font-size: 20px; line-height: 1.5;}
+    .to_me > button, form button { font-size: 14px; }
+    search > input{ width: 120px;}
+    .contact {font-size: 16px; margin: 20px; line-height: 25px;}
+    .to_me {margin: 20px;}
+    .footer_contact {font-size: 14px; line-height: 1.5;}
+    .footer_contact, .footer_form  {margin: 10px;}
+
+}
+@media (max-width: 768px) {
+    .hamburger{display: flex;}
+    .navigation {display: none; }
+    .menu{display: none;}
+    .menu.show{ display: flex; }
+    .header_top {  justify-content: space-around;}
+    .contact {font-size: 14px; margin: 10px ;}
+    .to_me {margin: 10px;}
+    .to_me > button, form button { font-size: 12px; }
+    search > input{ width: 100px;}
+    .header_top {  margin-top: 15px;}
+    .text1, .text2 {width: auto; margin: 10px 5px; font-size: 12px; margin: 0;}
+    .slider1 img, .slider2 img {width: 250px; height: 145px; margin: 0; }
+    .cit {width: auto; font-size: 12px; margin: 0;}
+    #cit2 {width: 100%; margin: 12px 0 0 0;}
+    .block1, .block2 {display: inline;}
+    .slider2  {display: flex; justify-content: flex-end;}
+    .footer_logo img {width: 80px; height: auto;}
+    .footer_form {font-size: 14px;}
+    .main > a, .main_catalog p {font-size: 15px;}
+}
+@media (max-width: 480px) {
+    .main, .main_catalog  {padding-bottom: 20px;}
+    form button {margin: 10px 0;}
+    .contact {font-size: 12px;}
+    .to_me > button, form button { font-size: 11px; }
+    search > input, search > button {height: 20px; object-fit: cover;}
+    search img {height: 15px; }
+    
+}
+@media (max-width: 320px) {
+    .contact {font-size: 10px;line-height: 1.5; margin-top: 30px;}
+    .to_me > button { font-size: 10px; padding: 7px 8px;}
+    .slider1 img, .slider2 img {width: 150px; height: 100px;}
+    search > input{ width: 70px;}
+    .logo_top img {width: 60px;}
+    .footer_form {font-size: 12px; }
+    .footer_form input, #e-mail  {width: 150px;}
+}
